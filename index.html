@@ -845,8 +845,8 @@
 <body>
 
   <!-- CURSOR -->
-  <div class="cursor" id="cursor" style="transform: translate(604px, 358px);"></div>
-  <div class="cursor-ring" id="cursorRing" style="transform: translate(591px, 345px);"></div>
+  <div class="cursor" id="cursor" style="transform: translate(756px, 233px);"></div>
+  <div class="cursor-ring" id="cursorRing" style="transform: translate(743px, 220px);"></div>
 
   <!-- NAV -->
   <nav id="navbar">
@@ -1195,17 +1195,35 @@ sin complicaciones.</p>
             <label>Correo electrónico</label>
             <input type="email" id="fCorreo" placeholder="tucorreo@gmail.com">
           </div>
+          <div class="form-row">
+          <div class="form-group">
+            <label>País</label>
+            <select id="fPais">
+              <option value="" selected="selected">Selecciona tu país...</option>
+              <option>Argentina</option><option>Bolivia</option><option>Brasil</option>
+              <option>Chile</option><option>Colombia</option><option>Costa Rica</option>
+              <option>Cuba</option><option>Ecuador</option><option>El Salvador</option>
+              <option>España</option><option>Estados Unidos</option><option>Guatemala</option>
+              <option>Honduras</option><option>México</option><option>Nicaragua</option>
+              <option>Panamá</option><option>Paraguay</option><option>Perú</option>
+              <option>Puerto Rico</option><option>República Dominicana</option>
+              <option>Uruguay</option><option>Venezuela</option><option>Otro</option>
+            </select>
+          </div>
           <div class="form-group">
             <label>¿Qué servicio necesitas?</label>
             <select id="fServicio">
               <option value="" selected="selected">Selecciona un servicio...</option>
-              <option>Landing Page</option>
-              <option>Tienda Online (E-commerce)</option>
-              <option>Aplicación Web</option>
-              <option>Diseño + Desarrollo completo</option>
-              <option>Soluciones Digitales / Consultoría</option>
+              <option>Landing Page ($99.99)</option>
+              <option>Tienda Online E-commerce ($399)</option>
+              <option>Aplicación Web ($299)</option>
+              <option>App Móvil Android ($299)</option>
+              <option>App Móvil iOS ($399)</option>
+              <option>Diseño + Desarrollo completo ($259)</option>
+              <option>Consultoría Digital ($99)</option>
               <option>No sé, necesito orientación</option>
             </select>
+          </div>
           </div>
           <div class="form-group">
             <label>Cuéntanos tu proyecto</label>
@@ -1477,6 +1495,7 @@ sin complicaciones.</p>
       const nombre   = document.getElementById('fNombre').value.trim();
       const telefono = document.getElementById('fTelefono').value.trim();
       const correo   = document.getElementById('fCorreo').value.trim();
+      const pais     = document.getElementById('fPais').value;
       const servicio = document.getElementById('fServicio').value;
       const mensaje  = document.getElementById('fMensaje').value.trim();
 
@@ -1485,7 +1504,7 @@ sin complicaciones.</p>
         return;
       }
 
-      const texto = `¡Hola Socio Digital! 👋\n\n*Nuevo contacto desde la página web:*\n\n👤 *Nombre:* ${nombre}\n📱 *Teléfono:* ${telefono}\n📧 *Correo:* ${correo}\n🛠️ *Servicio:* ${servicio || 'No especificado'}\n💬 *Mensaje:* ${mensaje || 'Sin mensaje adicional'}`;
+      const texto = `¡Hola Socio Digital! 👋\n\n*Nuevo contacto desde la página web:*\n\n👤 *Nombre:* ${nombre}\n📱 *Teléfono:* ${telefono}\n📧 *Correo:* ${correo}\n🌎 *País:* ${pais || 'No especificado'}\n🛠️ *Servicio:* ${servicio || 'No especificado'}\n💬 *Mensaje:* ${mensaje || 'Sin mensaje adicional'}`;
 
       document.getElementById('formContainer').style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
@@ -1508,11 +1527,13 @@ INFORMACIÓN DE LA EMPRESA:
 - Atendemos clientes en todo el mundo
 
 SERVICIOS Y PRECIOS ORIENTATIVOS:
-- Landing Pages: desde $149 (entrega en 3-5 días)
-- Tiendas Online (E-commerce): desde $399 (entrega en 7-14 días)
+- Landing Pages: desde $99.99 (entrega en 1 día)
+- Tiendas Online (E-commerce): desde $399 (entrega en 3-5 días)
 - Aplicaciones Web a medida: desde $299 (según complejidad)
-- Diseño + Desarrollo completo: desde $249
-- Soluciones Digitales / Consultoría: desde $99
+- Apps Móviles Android: desde $299
+- Apps Móviles iOS: desde $399
+- Diseño + Desarrollo completo: desde $259
+- Consultoría Digital: desde $99
 
 PROCESO DE TRABAJO:
 1. Conversamos y entendemos el proyecto
@@ -1524,7 +1545,7 @@ DIFERENCIADORES:
 - Hosting gratuito para siempre en GitHub Pages
 - Diseño que convierte visitas en clientes
 - Soporte continuo incluido
-- Cotización sin compromiso en 24h
+- Cotización inmediata vía WhatsApp
 
 REGLAS:
 - Responde siempre en español
