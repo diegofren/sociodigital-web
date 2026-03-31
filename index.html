@@ -614,6 +614,131 @@
     .success-msg h4 { font-family: 'Syne', sans-serif; font-size: 1.1rem; margin-bottom: 8px; color: #25d366; }
     .success-msg p { color: var(--muted); font-size: 0.9rem; }
 
+    /* APP MÓVIL MOCKUP */
+    .app-mockup-wrap {
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+      padding: 30px 0;
+    }
+
+    .app-phone {
+      width: 240px;
+      background: #0d0d18;
+      border: 2px solid rgba(255,255,255,0.12);
+      border-radius: 36px;
+      padding: 14px;
+      box-shadow: 0 0 60px rgba(123,47,255,0.3), 0 0 120px rgba(0,217,255,0.1), inset 0 0 0 1px rgba(255,255,255,0.05);
+      position: relative;
+    }
+
+    .phone-notch {
+      width: 70px; height: 20px;
+      background: #0d0d18;
+      border-radius: 0 0 14px 14px;
+      margin: 0 auto 10px;
+      border: 2px solid rgba(255,255,255,0.08);
+      border-top: none;
+    }
+
+    .phone-screen {
+      background: #111120;
+      border-radius: 24px;
+      overflow: hidden;
+      padding: 14px 12px 0;
+    }
+
+    .app-header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 14px;
+    }
+    .app-header-left { display: flex; align-items: center; gap: 8px; }
+    .app-avatar {
+      width: 32px; height: 32px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--c4), var(--c3));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; color: #fff;
+      font-family: 'Syne', sans-serif;
+    }
+    .app-store-name { font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 700; }
+    .app-store-sub { font-size: 0.6rem; color: var(--muted); }
+    .app-notif { font-size: 1rem; }
+
+    .app-stats-row {
+      display: flex; gap: 6px; margin-bottom: 14px;
+    }
+    .app-stat-box {
+      flex: 1; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px; padding: 8px 6px; text-align: center;
+    }
+    .app-stat-num { font-family: 'Syne', sans-serif; font-size: 0.78rem; font-weight: 800; }
+    .app-stat-lbl { font-size: 0.55rem; color: var(--muted); margin-top: 2px; }
+
+    .app-section-title {
+      font-family: 'Syne', sans-serif; font-size: 0.68rem; font-weight: 700;
+      margin-bottom: 8px; color: var(--muted);
+    }
+
+    .app-products {
+      display: flex; gap: 7px; margin-bottom: 12px;
+    }
+    .app-product {
+      flex: 1; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px; padding: 8px 6px;
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      position: relative;
+    }
+    .app-prod-img {
+      width: 36px; height: 36px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+    .app-prod-name { font-size: 0.55rem; font-weight: 600; text-align: center; }
+    .app-prod-price { font-size: 0.62rem; color: var(--c3); font-weight: 700; }
+    .app-prod-add {
+      position: absolute; top: 4px; right: 4px;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--c4), var(--c5));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700; color: #fff;
+    }
+
+    .app-cart-bar {
+      background: linear-gradient(135deg, var(--c4), var(--c5));
+      border-radius: 12px; padding: 10px 12px;
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 12px;
+    }
+    .app-cart-info { display: flex; align-items: center; gap: 8px; }
+    .app-cart-badge {
+      background: rgba(255,255,255,0.25); border-radius: 50%;
+      width: 18px; height: 18px; display: flex; align-items: center;
+      justify-content: center; font-size: 0.6rem; font-weight: 700;
+    }
+    .app-cart-total { font-size: 0.68rem; font-weight: 700; }
+    .app-cart-btn { font-size: 0.65rem; font-weight: 700; background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 8px; }
+
+    .app-bottom-nav {
+      display: flex; justify-content: space-around;
+      padding: 10px 0 14px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .app-nav-item { font-size: 1rem; opacity: 0.5; cursor: pointer; }
+    .app-nav-item.active { opacity: 1; }
+
+    .app-badge {
+      position: absolute;
+      background: rgba(17,17,24,0.95);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px; padding: 8px 12px;
+      display: flex; align-items: center; gap: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      white-space: nowrap; font-size: 1rem; z-index: 10;
+    }
+    .ab-1 { top: 10px; right: -20px; animation: floatBadge 4s ease-in-out infinite; }
+    .ab-2 { bottom: 40px; left: -20px; animation: floatBadge 4s 2s ease-in-out infinite; }
+
     /* FOOTER */
     footer {
       background: var(--dark2);
@@ -720,11 +845,11 @@
 <body>
 
   <!-- CURSOR -->
-  <div class="cursor" id="cursor" style="transform: translate(744px, 200px);"></div>
-  <div class="cursor-ring" id="cursorRing" style="transform: translate(731px, 187px);"></div>
+  <div class="cursor" id="cursor" style="transform: translate(676px, 172px);"></div>
+  <div class="cursor-ring" id="cursorRing" style="transform: translate(663px, 159px);"></div>
 
   <!-- NAV -->
-  <nav id="navbar">
+  <nav id="navbar" class="scrolled">
     <a href="#inicio" class="logo">Socio<span>.</span>Digital</a>
     <ul class="nav-links">
       <li><a href="#nosotros">Nosotros</a></li>
@@ -842,7 +967,7 @@ aplicaciones que convierten visitantes en clientes. Soluciones digitales
   <!-- NOSOTROS -->
   <section id="nosotros">
     <div class="nosotros-grid">
-      <div class="nosotros-text reveal">
+      <div class="nosotros-text reveal visible">
         <span class="section-tag">◈ Quiénes somos</span>
         <h2>Somos tu <span style="background:linear-gradient(135deg,var(--c3),var(--c4));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">aliado digital</span></h2>
         <p style="margin-top:20px;">En Socio Digital creemos que cada 
@@ -856,21 +981,21 @@ sin complicaciones.</p>
       </div>
 
       <div class="diferenciadores">
-        <div class="dif-card" style="transition-delay:0.1s">
+        <div class="dif-card visible" style="transition-delay:0.1s">
           <div class="dif-icon a">⚡</div>
           <div class="dif-content">
             <h4>Entrega rápida y garantizada</h4>
             <p>Cumplimos plazos sin sacrificar calidad. Tu proyecto listo cuando lo necesitas, con revisiones incluidas.</p>
           </div>
         </div>
-        <div class="dif-card" style="transition-delay:0.25s">
+        <div class="dif-card visible" style="transition-delay:0.25s">
           <div class="dif-icon b">🎯</div>
           <div class="dif-content">
             <h4>Diseño que convierte</h4>
             <p>No hacemos páginas bonitas por hacer. Diseñamos con estrategia para que tus visitantes se conviertan en clientes reales.</p>
           </div>
         </div>
-        <div class="dif-card" style="transition-delay:0.4s">
+        <div class="dif-card visible" style="transition-delay:0.4s">
           <div class="dif-icon c">🤝</div>
           <div class="dif-content">
             <h4>Soporte continuo y personalizado</h4>
@@ -883,42 +1008,42 @@ sin complicaciones.</p>
 
   <!-- SERVICIOS -->
   <section id="servicios">
-    <div class="servicios-header reveal">
+    <div class="servicios-header reveal visible">
       <span class="section-tag">◈ Lo que hacemos</span>
       <h2>Nuestros <span style="background:linear-gradient(135deg,var(--c1),var(--c5));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">servicios</span></h2>
       <p>Todo lo que tu negocio necesita para brillar en el mundo digital, en un solo lugar.</p>
     </div>
 
     <div class="servicios-grid">
-      <div class="servicio-card card-landing" style="transition-delay:0.0s">
+      <div class="servicio-card card-landing visible" style="transition-delay:0.0s">
         <div class="card-glow"></div>
         <span class="card-emoji">🌐</span>
         <h3>Landing Pages</h3>
         <p>Páginas de aterrizaje optimizadas para captar leads y convertir visitantes en clientes desde el primer scroll.</p>
         <span class="card-tag tag-blue">Alta conversión</span>
       </div>
-      <div class="servicio-card card-ecommerce" style="transition-delay:0.1s">
+      <div class="servicio-card card-ecommerce visible" style="transition-delay:0.1s">
         <div class="card-glow"></div>
         <span class="card-emoji">🛒</span>
         <h3>Tiendas Online</h3>
         <p>E-commerce completo con catálogo, pasarela de pago y gestión de pedidos. Tu tienda abierta 24/7.</p>
         <span class="card-tag tag-orange">E-commerce</span>
       </div>
-      <div class="servicio-card card-apps" style="transition-delay:0.2s">
+      <div class="servicio-card card-apps visible" style="transition-delay:0.2s">
         <div class="card-glow"></div>
         <span class="card-emoji">📱</span>
         <h3>Aplicaciones Web</h3>
         <p>Sistemas y aplicaciones a medida para automatizar procesos, gestionar tu negocio o escalar tu servicio.</p>
         <span class="card-tag tag-purple">A la medida</span>
       </div>
-      <div class="servicio-card card-diseno" style="transition-delay:0.3s">
+      <div class="servicio-card card-diseno visible" style="transition-delay:0.3s">
         <div class="card-glow"></div>
         <span class="card-emoji">✨</span>
         <h3>Diseño + Desarrollo</h3>
         <p>Desde el concepto visual hasta el código final. Identidad de marca, UX/UI y desarrollo integrados.</p>
         <span class="card-tag tag-pink">Full stack</span>
       </div>
-      <div class="servicio-card card-digital" style="transition-delay:0.4s">
+      <div class="servicio-card card-digital visible" style="transition-delay:0.4s">
         <div class="card-glow"></div>
         <span class="card-emoji">🚀</span>
         <h3>Soluciones Digitales</h3>
@@ -930,29 +1055,29 @@ sin complicaciones.</p>
 
   <!-- PROCESO -->
   <section id="proceso">
-    <div class="proceso-header reveal">
+    <div class="proceso-header reveal visible">
       <span class="section-tag">◈ Cómo trabajamos</span>
       <h2>Un proceso <span style="background:linear-gradient(135deg,var(--c4),var(--c3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">simple y efectivo</span></h2>
       <p>Sin complicaciones. De la idea a tu página en línea en pasos claros.</p>
     </div>
 
     <div class="proceso-steps">
-      <div class="step" style="transition-delay:0s">
+      <div class="step visible" style="transition-delay:0s">
         <div class="step-num s1">1</div>
         <h4>Conversamos</h4>
         <p>Escuchamos tu proyecto, objetivos y presupuesto. Definimos juntos qué necesitas exactamente.</p>
       </div>
-      <div class="step" style="transition-delay:0.15s">
+      <div class="step visible" style="transition-delay:0.15s">
         <div class="step-num s2">2</div>
         <h4>Diseñamos</h4>
         <p>Creamos una propuesta visual que refleje tu marca. Tú apruebas antes de escribir una línea de código.</p>
       </div>
-      <div class="step" style="transition-delay:0.3s">
+      <div class="step visible" style="transition-delay:0.3s">
         <div class="step-num s3">3</div>
         <h4>Desarrollamos</h4>
         <p>Construimos tu solución con tecnología moderna, optimizada para velocidad y dispositivos móviles.</p>
       </div>
-      <div class="step" style="transition-delay:0.45s">
+      <div class="step visible" style="transition-delay:0.45s">
         <div class="step-num s4">4</div>
         <h4>Lanzamos</h4>
         <p>Publicamos tu proyecto, te entregamos accesos y te acompañamos con soporte post-lanzamiento.</p>
@@ -962,41 +1087,99 @@ sin complicaciones.</p>
 
   <!-- CONTACTO -->
   <section id="contacto">
-    <div class="reveal" style="text-align:center;margin-bottom:10px">
+    <div class="reveal visible" style="text-align:center;margin-bottom:10px">
       <span class="section-tag">◈ Hablemos</span>
       <h2>¿Listo para <span style="background:linear-gradient(135deg,var(--c5),var(--c1));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">empezar?</span></h2>
     </div>
 
     <div class="contacto-wrapper">
-      <div class="contacto-info reveal">
-        <h3>Cuéntanos tu proyecto</h3>
-        <p>Estamos listos para hacer crecer tu presencia digital. Escríbenos y recibe una cotización sin compromiso en menos de 24 horas.</p>
-        <div class="info-items">
-          <div class="info-item">
-            <div class="info-icon wa">📱</div>
-            <div>
-              <strong>WhatsApp</strong>
-              <span>+593 958 783 014</span>
+      <!-- MOCKUP APP MÓVIL -->
+      <div class="app-mockup-wrap reveal visible">
+        <div class="app-phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <!-- Header app -->
+            <div class="app-header">
+              <div class="app-header-left">
+                <div class="app-avatar">SD</div>
+                <div>
+                  <div class="app-store-name">Socio Store</div>
+                  <div class="app-store-sub">Punto de Venta</div>
+                </div>
+              </div>
+              <div class="app-notif">🔔</div>
             </div>
-          </div>
-          <div class="info-item">
-            <div class="info-icon loc">📍</div>
-            <div>
-              <strong>Ubicación</strong>
-              <span>Quito, Ecuador — Atendemos toda Latinoamérica</span>
+
+            <!-- Stats row -->
+            <div class="app-stats-row">
+              <div class="app-stat-box">
+                <div class="app-stat-num" style="color:var(--c3)">$1,284</div>
+                <div class="app-stat-lbl">Ventas hoy</div>
+              </div>
+              <div class="app-stat-box">
+                <div class="app-stat-num" style="color:#25d366">38</div>
+                <div class="app-stat-lbl">Pedidos</div>
+              </div>
+              <div class="app-stat-box">
+                <div class="app-stat-num" style="color:var(--c1)">4.9★</div>
+                <div class="app-stat-lbl">Rating</div>
+              </div>
             </div>
-          </div>
-          <div class="info-item">
-            <div class="info-icon web">🌐</div>
-            <div>
-              <strong>Sitio web</strong>
-              <span>sociodigital.net</span>
+
+            <!-- Products -->
+            <div class="app-section-title">Productos destacados</div>
+            <div class="app-products">
+              <div class="app-product">
+                <div class="app-prod-img" style="background:linear-gradient(135deg,rgba(0,217,255,0.2),rgba(123,47,255,0.2))">📱</div>
+                <div class="app-prod-name">App Mobile</div>
+                <div class="app-prod-price">$299</div>
+                <div class="app-prod-add">+</div>
+              </div>
+              <div class="app-product">
+                <div class="app-prod-img" style="background:linear-gradient(135deg,rgba(255,107,53,0.2),rgba(255,45,135,0.2))">🌐</div>
+                <div class="app-prod-name">Landing Page</div>
+                <div class="app-prod-price">$149</div>
+                <div class="app-prod-add">+</div>
+              </div>
+              <div class="app-product">
+                <div class="app-prod-img" style="background:linear-gradient(135deg,rgba(37,211,102,0.2),rgba(0,217,255,0.15))">🛒</div>
+                <div class="app-prod-name">E-commerce</div>
+                <div class="app-prod-price">$399</div>
+                <div class="app-prod-add">+</div>
+              </div>
+            </div>
+
+            <!-- Cart bar -->
+            <div class="app-cart-bar">
+              <div class="app-cart-info">
+                <span class="app-cart-badge">3</span>
+                <span class="app-cart-total">Total: $847</span>
+              </div>
+              <div class="app-cart-btn">Cotizar →</div>
+            </div>
+
+            <!-- Bottom nav -->
+            <div class="app-bottom-nav">
+              <div class="app-nav-item active">🏠</div>
+              <div class="app-nav-item">📦</div>
+              <div class="app-nav-item">📊</div>
+              <div class="app-nav-item">👤</div>
             </div>
           </div>
         </div>
+
+        <!-- Badges flotantes app -->
+        <div class="app-badge ab-1">
+          <span>⚡</span>
+          <div><div class="fb-label">Tiempo de carga</div><div class="fb-value">0.8s</div></div>
+        </div>
+        <div class="app-badge ab-2">
+          <span>📲</span>
+          <div><div class="fb-label">Plataforma</div><div class="fb-value">Android &amp; iOS</div></div>
+        </div>
       </div>
 
-      <div class="form-box reveal">
+      <div class="form-box reveal visible">
         <div id="formContainer">
           <div class="form-row">
             <div class="form-group">
