@@ -1,0 +1,21 @@
+# robots.txt for sociodigital.net
+# Generado: 1 Abril 2026
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.sociodigital.net/sitemap.xml
+
+# Permitir bots de IA para aparecer en respuestas
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
